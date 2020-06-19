@@ -1,0 +1,25 @@
+body {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80% ;
+    margin: auto;
+
+}
+.red{
+    background: red;
+    flex: 1;
+}
+.green{
+    background: green;
+}
+.blue{
+    background: blue;
+    //flex: 1;
+}
+.container>div{
+    font-size: 3em;
+    padding: 5em;
+    color: white;
+}

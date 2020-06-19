@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>article1</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="shortcut icon" href="http://ifenxi.com/wp-content/uploads/2017/08/2017080810452674.png" type="image/x-icon" >
+    <link rel="pingback" href="http://ifenxi.com/xmlrpc.php" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE;chrome=1">
+    <title>页面标题</title>
+    <link rel='stylesheet' id='animate-css'  href='http://ifenxi.com/wp-content/themes/Grace/includes/css/animate.min.css?ver=Grace8' type='text/css' media='all' />
+    <link rel='stylesheet' id='bootstrap-css'  href='http://ifenxi.com/wp-content/themes/Grace/includes/css/bootstrap.min.css?ver=Grace8' type='text/css' media='all' />
+    <link rel='stylesheet' id='fontello-css'  href='http://ifenxi.com/wp-content/themes/Grace/includes/font-awesome/css/fontello.css?ver=Grace8' type='text/css' media='all' />
+    <link rel='stylesheet' id='reset-css'  href='http://ifenxi.com/wp-content/themes/Grace/includes/css/reset.css?ver=Grace8' type='text/css' media='all' />
+    <link rel='stylesheet' id='style-css'  href='http://ifenxi.com/wp-content/themes/Grace/style.css?ver=Grace8' type='text/css' media='all' />
+    <script type='text/javascript' src='http://ifenxi.com/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+    <script type='text/javascript' src='http://ifenxi.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+</head>
+<body class="archive category category-top category-13 off-canvas-nav-left">
+    <?php
+    //引用conn.php文件
+    $mysqli = new mysqli('nngkstbdbmhb.mysql.sae.sina.com.cn', 'ad', 'ncut1234', 'carsharing', '10451');
+    if ($mysqli->connect_error) {
+        exit($mysqli->connect_error);
+    }
+    $sql="SELECT * FROM content WHERE id = 2";
+    $result=mysqli_query($mysqli,$sql);
+    $row=mysqli_fetch_assoc($result);
+    echo "<div id=\"header\" class=\"navbar-fixed-top\">
+    <div class=\"container\">
+        <h1 class=\"logo\">
+            <a  href=\"http://1.phpexp1.applinzi.com/wechat/pic/carsharing.jpg\" title=\"mainpic\" style=\"background-image: url(http://1.phpexp1.applinzi.com/wechat/pic/carsharing.jpg);\"/>
+
+            </a>
+        </h1>
+
+        <div role=\"navigation\"  class=\"site-nav  primary-menu\">
+            <div class=\"menu-fix-box\">
+                <ul id=\"menu-navigation\" class=\"menu\"><li><a href=\"http://1.phpexp1.applinzi.com/wechat/main.html\">首页</a></li>
+                    <li><a href=\"http://1.phpexp1.applinzi.com/wechat/A.html\">行业发展</a></li>
+                    <li><a href=\"http://1.phpexp1.applinzi.com/wechat/B.html\">企业动向</a></li>
+                    <li><a href=\"http://1.phpexp1.applinzi.com/wechat/C.html\">运营服务</a></li>
+                    <li><a href=\"http://1.phpexp1.applinzi.com/wechat/D.html\">企业调研</a></li>
+                    <li><a href=\"http://1.phpexp1.applinzi.com/wechat/E.html\">研究报告</a></li>
+                    <li><a href=\"http://1.phpexp1.applinzi.com/wechat/F.html\">人物访谈</a></li>
+                    <li><a href=\"http://1.phpexp1.applinzi.com/wechat/G.html\">其他</a></li>
+                </ul>                           </div>
+        </div>
+
+        <div class=\"right-nav pull-right\">
+
+            <div class=\"js-toggle-message hidden-xs hidden-sm\">
+                <button id=\"sitemessage\" type=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">
+                    <i class=\"icon-megaphone\"></i>
+                </button>
+                <div class=\"dropdown-menu\" role=\"menu\" aria-labelledby=\"sitemessage\">
+                    <ul>
+                        <li class=\"first\"><span class=\"time\">日期</span><a target=\"_blank\" href=\"http://ifenxi.com/archives/2454\">弹出1</a></li><li><span class=\"time\">日期</span><a target=\"_blank\" href=\"http://ifenxi.com/archives/2451\">弹出2</a></li><li><span class=\"time\">日期</span><a target=\"_blank\" href=\"http://ifenxi.com/archives/2448\">弹出3</a></li><li><span class=\"time\">日期</span><a target=\"_blank\" href=\"http://ifenxi.com/archives/2440\">弹出4</a></li><li><span class=\"time\">日期</span><a target=\"_blank\" href=\"http://ifenxi.com/archives/2432\">弹出5</a></li>                        </ul>
+                    <div class=\"more-messages\"><a target=\"_blank\" href=\"http://ifenxi.com/archives/category/research\">更多</a></div>
+                </div>
+            </div>
+
+            <button class=\"js-toggle-search\"><i class=\" icon-search\"></i></button>
+            <!--  <a href=\"http://ifenxi.com/contribute-page\" class=\"toggle-tougao  hidden-xs hidden-sm\">投稿</a> -->
+            <a href=\"http://1.phpexp1.applinzi.com/wechat/sorry.html\" class=\"toggle-login hidden-xs hidden-sm\">LOGIN</a>
+            <span class=\"line  hidden-xs hidden-sm\"></span>
+            <a href=\"http://1.phpexp1.applinzi.com/wechat/sorry.html\" class=\"toggle-login hidden-xs hidden-sm\">REG</a>
+
+
+        </div>
+        <div class=\"navbar-mobile hidden-md hidden-lg\">
+            <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\" aria-expanded=\"false\">
+                <span class=\"icon-bar\"></span>
+                <span class=\"icon-bar\"></span>
+                <span class=\"icon-bar\"></span>
+            </button>
+            <div class=\"collapse navbar-collapse\" id=\"bs-example-navbar-collapse-1\">
+                <ul class=\"nav navbar-nav\">
+                    <li><a href=\"http://1.phpexp1.applinzi.com/wechat/A.html\">行业发展</a></li>
+                    <li><a href=\"http://1.phpexp1.applinzi.com/wechat/B.html\">企业动向</a></li>
+                    <li><a href=\"http://1.phpexp1.applinzi.com/wechat/C.html\">运营服务</a></li>
+                    <li><a href=\"http://1.phpexp1.applinzi.com/wechat/D.html\">企业调研</a></li>
+                    <li><a href=\"http://1.phpexp1.applinzi.com/wechat/E.html\">研究报告</a></li>
+                    <li><a href=\"http://1.phpexp1.applinzi.com/wechat/F.html\">人物访谈</a></li>
+                    <li><a href=\"http://1.phpexp1.applinzi.com/wechat/G.html\">其他</a></li>
+                </ul>
+            </div>
+            <div class=\"body-overlay\"></div>
+        </div>
+    </div>
+</div>
+<div id=\"page-content\">
+    <div class=\"container\">
+        <div class=\"row\">
+
+           <div class=\"article col-xs-12 col-sm-8 col-md-8\">
+
+                <div class=\"post\">
+
+    <div class=\"post-title\">
+        <!--div-- class=\"post-entry-categories\"><a href=\"http://ifenxi.com/archives/tag/%e5%b7%a5%e5%85%b7app\" rel=\"tag\">工具APP</a><a href=\"http://ifenxi.com/archives/tag/%e6%99%ba%e6%85%a7%e5%81%9c%e8%bd%a6\" rel=\"tag\">智慧停车</a><a href=\"http://ifenxi.com/archives/tag/%e6%99%ba%e8%83%bd%e9%a9%be%e9%a9%b6\" rel=\"tag\">智能驾驶</a><a href=\"http://ifenxi.com/archives/tag/%e6%b1%bd%e8%bd%a6%e5%87%ba%e8%a1%8c%e7%bb%bc%e5%90%88%e6%9c%8d%e5%8a%a1\" rel=\"tag\">汽车出行综合服务</a><a href=\"http://ifenxi.com/archives/tag/%e6%b1%bd%e8%bd%a6%e7%a7%9f%e8%b5%81\" rel=\"tag\">汽车租赁</a><a href=\"http://ifenxi.com/archives/tag/%e6%b1%bd%e8%bd%a6%e9%87%91%e8%9e%8d-%e7%94%b5%e5%8a%a8%e6%b1%bd%e8%bd%a6\" rel=\"tag\">汽车金融.电动汽车</a><a href=\"http://ifenxi.com/archives/tag/%e6%b1%bd%e8%bd%a6%e9%94%80%e5%94%ae\" rel=\"tag\">汽车销售</a><a href=\"http://ifenxi.com/archives/tag/%e6%b1%bd%e9%85%8d%e7%bb%b4%e4%bf%9d\" rel=\"tag\">汽配维保</a><a href=\"http://ifenxi.com/archives/tag/%e7%bd%91%e7%ba%a6%e8%bd%a6\" rel=\"tag\">网约车</a></div-->
+        <h1 class=\"title\">".$row["BIGTITLE"]."</h1>
+        <div class=\"post_icon\">
+            <span  class=\"postauthor\"><img src=\"http://1.phpexp1.applinzi.com/wechat/pic/touxiang1.jpg\" width=\"96\" height=\"96\" alt=\"作者1\" class=\"avatar avatar-96 wp-user-avatar wp-user-avatar-96 alignnone photo\" /><a href=\"http://1.phpexp1.applinzi.com/wechat/sorry.html\">".$row["AUTHOR"]."</a></span>
+
+            <span  class=\"postcat\"><i class=\" icon-list-2\"></i> <a href=\"http://1.phpexp1.applinzi.com/wechat/A.html\">".$row["TYPE"]."</a></span>
+            <span class=\"postclock\"><i class=\"icon-clock-1\"></i> ".$row["DATE"]."</span>
+            <span class=\"postcomment\"><i class=\"icon-comment-4\"></i> <a href=\"http://1.phpexp1.applinzi.com/wechat/sorry.html\" title=\"评论\"><a href=\"http://1.phpexp1.applinzi.com/wechat/sorry.html\">".$row["COMMENT_NUM"]."</a></a></span>
+
+        </div>
+    </div>
+    <div class=\"post-content\">
+        <p class=\"post-abstract\"><span class=\"abstract-tit\">".$row["ABSTRACT_FIRST"]."</span>1</p>
+        <p style=\"text-align:justify;\">
+            <img alt=\"标题图片\" src=\"http://1.phpexp1.applinzi.com/wechat/pic/logo.jpg\" alt=\"标题图片\" />
+        </p>
+        <p style=\"text-align:justify;\">
+            <span style=\"font-family:'Microsoft YaHei';font-size:12px;\">".$row["GUIDE"]."</span>
+        </p>
+        <p style=\"text-align:justify;\">
+            <span style=\"font-family:'Microsoft YaHei';font-size:12px;\">".$row["WRITER"]." </span>
+        </p>
+        <p style=\"text-align:justify;\">
+            <span style=\"font-family:SimSun;font-size:16px;\">".$row["ABSTRACT_SECOND"]."</span>
+        </p>
+        <p style=\"text-align:justify;\">
+            <span style=\"font-family:'Microsoft YaHei';font-size:16px;\">".$row["TEXT_FIRST"]."</span>
+        </p>
+        <p style=\"text-align:justify;\">
+            <span style=\"font-family:'Microsoft YaHei';font-size:16px;\">".$row["TEXT_SECOND"]."</span>
+        </p>
+        <p style=\"text-align:justify;\">
+            <span style=\"font-family:'Microsoft YaHei';font-size:16px;\">".$row["TEXT_THIRD"]."</span>
+        </p>
+        <p style=\"text-align:justify;\">
+            <span style=\"font-family:'Microsoft YaHei';font-size:16px;\">".$row["TEXT_FORTH"]."</span>
+        </p>
+        <p style=\"text-align:justify;\">
+            <span style=\"font-family:'Microsoft YaHei';font-size:16px;\">".$row["TEXT_FIFTH"]."</span>
+        </p>
+
+                    <p style=\"text-align:justify;\">
+                        <span style=\"font-family:'Microsoft YaHei';font-size:16px;\">欢迎关注。</span></p>
+                </div>
+                <div class=\"post-options  clearfix\">
+                    <a href=\"javascript:;\" data-action=\"ding\" data-id=\"2471\" id=\"Addlike\" class=\"action btn-likes like\" title=\"喜欢\">
+                        <span class=\"icon s-like\"><i class=\"icon-heart\"></i><i class=\"icon-heart-filled\"></i> 喜欢 </span>
+                        (<span class=\"count num\">1</span>)
+                    </a>
+                    <div class=\"su-dropdown paydropdown\">
+                        <a href=\"javascript:;\" class=\"pay-author\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"true\"><i class=\"icon-money-1\"></i><span>打赏</span></a>
+                        <div class=\"su-dropbox \" aria-labelledby=\"pay-qr\">
+                            <ul>
+                                <li class=\"weixinpay\"><img alt=\"打赏\" src=\"\"><b>微信扫一扫</b></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class=\"su-dropdown socialdropdown\">
+                        <a href=\"javascript:;\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"true\" class=\"J_showAllShareBtn\"><i class=\"icon-share-2\"></i><span>分享</span></a>
+                        <div class=\"su-dropbox action-share bdsharebuttonbox\" aria-labelledby=\"social\"><a class=\"bds_tsina icon-weibo\" data-cmd=\"tsina\"><span>微博</span></a><a class=\"bds_weixin icon-wechat\" data-cmd=\"weixin\"><span>微信</span></a><a class=\"bds_sqq icon-qq\" data-cmd=\"sqq\"><span>QQ好友</span></a><a class=\"share-links bds_more icon-plus-1\" data-cmd=\"more\"><span>更多</span></a></div>
+                    </div>
+                </div>
+                <div class=\"next-prev-posts clearfix\">
+
+                    <div class=\"prev-post\" style=\"width:100%;\">
+                        <a href=\"http://1.phpexp1.applinzi.com/wechat/sorry.html\" title=\"标题\" target=\"_blank\" class=\"prev has-background\" style=\"background-image: url(http://1.phpexp1.applinzi.com/wechat/sorry.html)\" alt=\"上一篇标题\">
+                            <span>上一篇</span><h4>上一篇标题</h4>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class=\"clear\"></div>
+            <div id=\"comments\" class=\"clearfix\">
+
+
+
+                <!--div id=\"respond\"  class=\"respond-box\">
+                    <h3 class=\"comments-title\">发表评论 <span id=\"cancel-comment-reply\"><a rel=\"nofollow\" id=\"cancel-comment-reply-link\" href=\"/archives/2471#respond\" style=\"display:none;\">点击这里取消回复。</a></span></h3>
+                    <form action=\"http://ifenxi.com/wp-comments-post.php\" method=\"post\" id=\"commentform\">
+
+
+                        <div id=\"comment-author-info\" class=\"clearfix\">
+                            <div class=\"comment-md-3\">
+                                <label for=\"author\">昵称<span class=\"required\">*</span></label>
+                                <input type=\"text\" name=\"author\" id=\"author\" class=\"comment-md-9\" value=\"\" size=\"22\" tabindex=\"1\" />
+                            </div>
+                            <div class=\"comment-md-3\">
+                                <label for=\"email\">邮箱<span class=\"required\">*</span></label>
+                                <input type=\"email\" name=\"email\" id=\"email\" class=\"comment-md-9\" value=\"\" size=\"22\" tabindex=\"2\" />
+                            </div>
+                            <div class=\"comment-md-3 comment-form-url\">
+                                <label for=\"url\">网址<span class=\"required\"></span></label>
+                                <input type=\"text\" name=\"url\" id=\"url\" class=\"comment-md-9\" value=\"\" size=\"22\" tabindex=\"3\" />
+                            </div>
+                        </div>
+                        <div class=\"comment-from-main clearfix\">
+                            <div class=\"comment-form-textarea\">
+                                <div class=\"comment-textarea-box\">
+                                    <textarea class=\"comment-textarea\" name=\"comment\" id=\"comment\"  placeholder=\"说点什么吧...\"></textarea>
+                                </div>
+                            </div>
+
+                            <div class=\"form-submit\">
+                                <button id=\"smilies\" class=\"btn\" type=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">
+                                    <i class=\"icon-emo-happy\"></i> 表情
+                                </button>
+                                <div class=\"dropdown-menu dropdown-menu-left comment-form-smilies\" aria-labelledby=\"smilies\">
+                                    <div class=\"smilies-box\"><a class=\"add-smily\" data-action=\"addSmily\" data-smilies=\":mrgreen:\"><img class=\"wp-smiley\" src=\"http://ifenxi.com/wp-content/themes/Grace/includes/wp-alu/static/img/icon_mrgreen.gif\" /></a><a class=\"add-smily\" data-action=\"addSmily\" data-smilies=\":neutral:\"><img class=\"wp-smiley\" src=\"http://ifenxi.com/wp-content/themes/Grace/includes/wp-alu/static/img/icon_neutral.gif\" /></a><a class=\"add-smily\" data-action=\"addSmily\" data-smilies=\":twisted:\"><img class=\"wp-smiley\" src=\"http://ifenxi.com/wp-content/themes/Grace/includes/wp-alu/static/img/icon_twisted.gif\" /></a><a class=\"add-smily\" data-action=\"addSmily\" data-smilies=\":arrow:\"><img class=\"wp-smiley\" src=\"http://ifenxi.com/wp-content/themes/Grace/includes/wp-alu/static/img/icon_arrow.gif\" /></a><a class=\"add-smily\" data-action=\"addSmily\" data-smilies=\":shock:\"><img class=\"wp-smiley\" src=\"http://ifenxi.com/wp-content/themes/Grace/includes/wp-alu/static/img/icon_eek.gif\" /></a><a class=\"add-smily\" data-action=\"addSmily\" data-smilies=\":smile:\"><img class=\"wp-smiley\" src=\"http://ifenxi.com/wp-content/themes/Grace/includes/wp-alu/static/img/icon_smile.gif\" /></a><a class=\"add-smily\" data-action=\"addSmily\" data-smilies=\":???:\"><img class=\"wp-smiley\" src=\"http://ifenxi.com/wp-content/themes/Grace/includes/wp-alu/static/img/icon_confused.gif\" /></a><a class=\"add-smily\" data-action=\"addSmily\" data-smilies=\":cool:\"><img class=\"wp-smiley\" src=\"http://ifenxi.com/wp-content/themes/Grace/includes/wp-alu/static/img/icon_cool.gif\" /></a><a class=\"add-smily\" data-action=\"addSmily\" data-smilies=\":evil:\"><img class=\"wp-smiley\" src=\"http://ifenxi.com/wp-content/themes/Grace/includes/wp-alu/static/img/icon_evil.gif\" /></a><a class=\"add-smily\" data-action=\"addSmily\" data-smilies=\":grin:\"><img class=\"wp-smiley\" src=\"http://ifenxi.com/wp-content/themes/Grace/includes/wp-alu/static/img/icon_biggrin.gif\" /></a><a class=\"add-smily\" data-action=\"addSmily\" data-smilies=\":idea:\"><img class=\"wp-smiley\" src=\"http://ifenxi.com/wp-content/themes/Grace/includes/wp-alu/static/img/icon_idea.gif\" /></a><a class=\"add-smily\" data-action=\"addSmily\" data-smilies=\":oops:\"><img class=\"wp-smiley\" src=\"http://ifenxi.com/wp-content/themes/Grace/includes/wp-alu/static/img/icon_redface.gif\" /></a><a class=\"add-smily\" data-action=\"addSmily\" data-smilies=\":razz:\"><img class=\"wp-smiley\" src=\"http://ifenxi.com/wp-content/themes/Grace/includes/wp-alu/static/img/icon_razz.gif\" /></a><a class=\"add-smily\" data-action=\"addSmily\" data-smilies=\":roll:\"><img class=\"wp-smiley\" src=\"http://ifenxi.com/wp-content/themes/Grace/includes/wp-alu/static/img/icon_rolleyes.gif\" /></a><a class=\"add-smily\" data-action=\"addSmily\" data-smilies=\":wink:\"><img class=\"wp-smiley\" src=\"http://ifenxi.com/wp-content/themes/Grace/includes/wp-alu/static/img/icon_wink.gif\" /></a><a class=\"add-smily\" data-action=\"addSmily\" data-smilies=\":cry:\"><img class=\"wp-smiley\" src=\"http://ifenxi.com/wp-content/themes/Grace/includes/wp-alu/static/img/icon_cry.gif\" /></a><a class=\"add-smily\" data-action=\"addSmily\" data-smilies=\":eek:\"><img class=\"wp-smiley\" src=\"http://ifenxi.com/wp-content/themes/Grace/includes/wp-alu/static/img/icon_surprised.gif\" /></a><a class=\"add-smily\" data-action=\"addSmily\" data-smilies=\":lol:\"><img class=\"wp-smiley\" src=\"http://ifenxi.com/wp-content/themes/Grace/includes/wp-alu/static/img/icon_lol.gif\" /></a><a class=\"add-smily\" data-action=\"addSmily\" data-smilies=\":mad:\"><img class=\"wp-smiley\" src=\"http://ifenxi.com/wp-content/themes/Grace/includes/wp-alu/static/img/icon_mad.gif\" /></a><a class=\"add-smily\" data-action=\"addSmily\" data-smilies=\":sad:\"><img class=\"wp-smiley\" src=\"http://ifenxi.com/wp-content/themes/Grace/includes/wp-alu/static/img/icon_sad.gif\" /></a><a class=\"add-smily\" data-action=\"addSmily\" data-smilies=\":!:\"><img class=\"wp-smiley\" src=\"http://ifenxi.com/wp-content/themes/Grace/includes/wp-alu/static/img/icon_exclaim.gif\" /></a><a class=\"add-smily\" data-action=\"addSmily\" data-smilies=\":?:\"><img class=\"wp-smiley\" src=\"http://ifenxi.com/wp-content/themes/Grace/includes/wp-alu/static/img/icon_question.gif\" /></a></div>
+                                </div>
+                                <input class=\"btn-comment pull-right\" name=\"submit\" type=\"submit\" id=\"submit\" tabindex=\"5\" title=\"发表评论\" value=\"发表评论\">
+                                <input type='hidden' name='comment_post_ID' value='2471' id='comment_post_ID' />
+                                <input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+                            </div>
+
+                        </div>
+                        <script type=\"text/javascript\">   //Crel+Enter
+                        //<![CDATA[
+                        jQuery(document).keypress(function(e){
+                            if(e.ctrlKey && e.which == 13 || e.which == 10) {
+                                jQuery(\"#submit\").click();
+                                document.body.focus();
+                            } else if (e.shiftKey && e.which==13 || e.which == 10) {
+                                jQuery(\"#submit\").click();
+                            }
+                        })
+                        // ]]>
+                        </script>
+                    </form>
+                </--div>
+            </div-->
+
+        </div>
+        <!--div-- class=\"sidebar col-xs-12 col-sm-4 col-md-4\">
+            <div class=\"widget suxingme_post_author\">
+
+
+                <div class=\"authors_profile\">
+                    <div class=\"avatar-panel\" >
+                        <a target=\"_blank\" href=\"http://ifenxi.com/archives/author/lqc\" title=\"林青川\" class=\"author_pic\">
+                            <img src=\"http://ifenxi.com/wp-content/uploads/2016/12/2016122712041752-150x150.jpg\" width=\"80\" height=\"80\" alt=\"林青川\" class=\"avatar avatar-80 wp-user-avatar wp-user-avatar-80 alignnone photo\" />                </a>
+                    </div>
+                    <div class=\"author_name\"><a target=\"_blank\" href=\"http://ifenxi.com/archives/author/lqc\" title=\"林青川\">林青川</a><span>分析师</span></div>
+                    <p class=\"author_dec\"><p>爱分析互金分析师，微信号lin_qingchuan</p>
+                    </p>
+                </div>
+            </div>
+            <div class=\"widget widget_suxingme_mostviews\"><h3><span>最热点击文章</span></h3>    <ul class=\"widget_suxingme_post\">
+                <li>
+                    <a href=\"http://ifenxi.com/archives/2289\" title=\"宝驾出行CEO李如彬：做共享汽车行业的携程 | 爱分析访谈\">
+                        <div class=\"overlay\"></div>
+
+                        <img src=\"http://ifenxi.com/wp-content/uploads/2017/11/2017111607454895.png\" alt=\"宝驾出行CEO李如彬：做共享汽车行业的携程 | 爱分析访谈\" class=\"thumbnail\" />
+
+                        <div class=\"title\">
+                            <div class=\"entry-meta\"><span>2017-11-15</span><span><i class=\"icon-eye\"></i> 1,597</span></div>
+                            <h4>宝驾出行CEO李如彬：做共享汽车行业的携程 | 爱分析访谈</h4>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href=\"http://ifenxi.com/archives/2253\" title=\"“农村包围城市”，学乐如何用一款产品玩转教育信息化？| 爱分析调研\">
+                        <div class=\"overlay\"></div>
+
+                        <img src=\"http://ifenxi.com/wp-content/uploads/2017/11/2017110607533955.jpg\" alt=\"“农村包围城市”，学乐如何用一款产品玩转教育信息化？| 爱分析调研\" class=\"thumbnail\" />
+
+                        <div class=\"title\">
+                            <div class=\"entry-meta\"><span>2017-11-05</span><span><i class=\"icon-eye\"></i> 1,583</span></div>
+                            <h4>“农村包围城市”，学乐如何用一款产品玩转教育信息化？| 爱分析调研</h4>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href=\"http://ifenxi.com/archives/2232\" title=\"利润比趣店还高，为何拍拍贷IPO估值低于趣店？| 爱分析调研\">
+                        <div class=\"overlay\"></div>
+
+                        <img src=\"http://ifenxi.com/wp-content/uploads/2017/10/2017103107531182.jpg\" alt=\"利润比趣店还高，为何拍拍贷IPO估值低于趣店？| 爱分析调研\" class=\"thumbnail\" />
+
+                        <div class=\"title\">
+                            <div class=\"entry-meta\"><span>2017-10-30</span><span><i class=\"icon-eye\"></i> 1,483</span></div>
+                            <h4>利润比趣店还高，为何拍拍贷IPO估值低于趣店？| 爱分析调研</h4>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href=\"http://ifenxi.com/archives/2176\" title=\"趣店IPO估值300亿，未来仍将有数倍增长？| 爱分析调研\">
+                        <div class=\"overlay\"></div>
+
+                        <img src=\"http://ifenxi.com/wp-content/uploads/2017/10/2017101610484144.png\" alt=\"趣店IPO估值300亿，未来仍将有数倍增长？| 爱分析调研\" class=\"thumbnail\" />
+
+                        <div class=\"title\">
+                            <div class=\"entry-meta\"><span>2017-10-16</span><span><i class=\"icon-eye\"></i> 1,476</span></div>
+                            <h4>趣店IPO估值300亿，未来仍将有数倍增长？| 爱分析调研</h4>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href=\"http://ifenxi.com/archives/2207\" title=\"171亿美元，好未来贵不贵？| 爱分析调研\">
+                        <div class=\"overlay\"></div>
+
+                        <img src=\"http://ifenxi.com/wp-content/uploads/2017/10/2017102407401519.png\" alt=\"171亿美元，好未来贵不贵？| 爱分析调研\" class=\"thumbnail\" />
+
+                        <div class=\"title\">
+                            <div class=\"entry-meta\"><span>2017-10-23</span><span><i class=\"icon-eye\"></i> 1,250</span></div>
+                            <h4>171亿美元，好未来贵不贵？| 爱分析调研</h4>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            </div></div-->      </div>
+</div>
+</div>
+<div class=\"clearfix\"></div>
+    <div id=\"footer\" class=\"two-s-footer clearfix\">
+        <div class=\"footer-box\">
+            <div class=\"container\">
+                <div class=\"social-footer\">
+                    <a id=\"tooltip-f-weixin\" class=\"wxii\" href=\"javascript:void(0);\"><i class=\"icon-wechat\"></i></a>
+                </div>
+                <div class=\"nav-footer\">
+                    <a href=\"http://1.phpexp1.applinzi.com/wechat/aboutus.html\">关于我们</a>
+                    <a href=\"http://1.phpexp1.applinzi.com/wechat/sorry.html\">加入我们</a>
+                    <a href=\"http://1.phpexp1.applinzi.com/wechat/sorry.html\">联系我们</a>
+                    <a href=\"http://1.phpexp1.applinzi.com/wechat/sorry.html\">版权声明</a>
+                </div>
+                <div class=\"copyright-footer\">
+                    <p>Copyright © 2017 <a class=\"site-link\" href=\"http://ifenxi.com\" title=\"爱分析\" rel=\"home\">共享汽车</a>
+
+                        <a href=\"http://www.miitbeian.gov.cn\" rel=\"external nofollow\" target=\"_blank\"></a>
+                        <script>
+                            var _hmt = _hmt || [];
+                            (function() {
+                                var hm = document.createElement(\"script\");
+                                hm.src = \"https://hm.baidu.com/hm.js?af3f301e50416fc30eb47b7d444081cf\";
+                                var s = document.getElementsByTagName(\"script\")[0];
+                                s.parentNode.insertBefore(hm, s);
+                            })();
+                        </script>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class=\"search-form\">
+        <form method=\"get\" action=\"http://1.phpexp1.applinzi.com/wechat/main.html\" role=\"search\">
+            <div class=\"search-form-inner\">
+                <div class=\"search-form-box\">
+                    <input class=\"form-search\" type=\"text\" name=\"s\" placeholder=\"键入搜索关键词\">
+                    <button type=\"submit\" id=\"btn-search\"><i class=\"icon-search\"></i> </button>
+
+                </div>
+            </div>
+        </form>
+        <div class=\"close-search\">
+            <span class=\"close-top\"></span>
+            <span class=\"close-bottom\"></span>
+        </div>
+    </div>
+    <div class=\"f-weixin-dropdown\">
+        <div class=\"tooltip-weixin-inner\">
+            <h3>关注我们的公众号</h3>
+            <div class=\"qcode\">
+                <img src=\"http://1.phpexp1.applinzi.com/wechat/pic/wxcode.jpg\" width=\"160\" height=\"160\" alt=\"微信公众号\">
+            </div>
+        </div>
+        <div class=\"close-weixin\">
+            <span class=\"close-top\"></span>
+            <span class=\"close-bottom\"></span>
+        </div>
+    </div>
+<script type='text/javascript'>
+    /* <![CDATA[ */
+    var suxingme_url = {\"url_ajax\":\"http:\/\/ifenxi.com\/wp-admin\/admin-ajax.php\",\"url_theme\":\"http:\/\/ifenxi.com\/wp-content\/themes\/Grace\",\"slidestyle\":\"index_no_slide\",\"wow\":\"1\",\"sideroll\":\"\",\"duang\":\"\"};
+    /* ]]> */
+</script>
+<script type='text/javascript' src='http://ifenxi.com/wp-content/themes/Grace/js/bootstrap.min.js?ver=Grace8'></script>
+<script type='text/javascript' src='http://ifenxi.com/wp-content/themes/Grace/js/plugins.min.js?ver=Grace8'></script>
+<script type='text/javascript' src='http://ifenxi.com/wp-content/themes/Grace/js/suxingme.js?ver=Grace8'></script>
+<script type='text/javascript' src='http://ifenxi.com/wp-content/themes/Grace/js/resizeEnd.js?ver=Grace8'></script>
+<script type='text/javascript' src='http://ifenxi.com/wp-content/themes/Grace/js/wow.min.js?ver=Grace8'></script>
+<script type='text/javascript' src='http://ifenxi.com/wp-content/themes/Grace/ajax-comment/ajax-comment.js?ver=Grace8'></script>
+<script type='text/javascript' src='http://ifenxi.com/wp-content/themes/Grace/js/baidushare.js?ver=Grace8'></script>";
+    $mysqli->close();
+    ?>
+</body>
+</html>

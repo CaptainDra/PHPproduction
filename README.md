@@ -18,6 +18,6 @@ This is a Store Homepage I developed during a web course, my teacher sent us a w
 The orginal web application and template should came from here:[https://github.com/StartBootstrap/startbootstrap-shop-homepage](https://github.com/StartBootstrap/startbootstrap-shop-homepage)   
 I tried to add some functions about users' login, register, and logout.   
 
-# A demo for full web application for article management system   
+# A demo for full web application for Article Management System   
 [Click here!](./PHPdemo)   
 This is a local version for me to test some function before I upload to sina platform, which include some basic functions for article management system.   

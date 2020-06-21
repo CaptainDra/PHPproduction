@@ -14,5 +14,5 @@ The application included basic operation for an application with database. For d
 # Store Homepage demo   
 [Click here!](./mydemo_v1)   
 This is a Store Homepage I developed during a web course, my teacher sent us a web application(From Start Bootstrap) and asked us to try to make some changes.   
-[The orginal web application should came from here](https://github.com/StartBootstrap/startbootstrap-shop-homepage)   
+The orginal web application and template should came from here:[https://github.com/StartBootstrap/startbootstrap-shop-homepage](https://github.com/StartBootstrap/startbootstrap-shop-homepage)   
 I tried to add some functions about users' login, register, and logout.   
